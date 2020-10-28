@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        <style>
+            table, td {
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+<body>
+    <article>
+        <header id="myHeader">
+        <h3>Stranica napravljena DOM u javascriptu</h3>
+        </header>
+        
+      </article>
+    
+      <button onclick="Naslov()">Promjeni boju naslova</button>
+    
+    <p>Ovaj dokument je zadnje promjenjen <span id="demo1"></span>.</p>
+<p>Klikom na gumb ispiši ime domene servera koja je učitala ovaj dokument</p>
+
+<button onclick="myFunction()">Probaj</button>
+
+
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+
+
+<img id="myImg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1043380158mod-1538401869.jpg?crop=0.536xw:1.00xh;0.0221xw,0&resize=480:*" alt="Kanje" width="204" height="228">
+
+<p>Klikni ovaj gumb da ispišeš URL slike</p>
+
+<button onclick="slika()">Klikni</button>
+<br><br>
+<button onclick="background()">Promjeni pozadinu</button>
+<script>
+   
+    function myFunction() {
+  document.getElementById("demo").innerHTML = document.domain;
+
+  
+} 
+    
+    
+    document.getElementById("demo1").innerHTML = document.lastModified;
+
+    function slika() {
+  var x = document.getElementById("myImg").src;
+  document.getElementById("demo2").innerHTML = x;
+}
+
+  function background() {
+  document.body.style.background = "url('https://www.desktopbackground.org/download/o/2010/12/13/125646_kanye-west-wallpapers-iphone_1024x768_h.jpg')  ";
+  }
+  function tablica() {
+  var x = document.getElementById("myTable");
+  x.deleteRow(0);
+}
+  function Naslov() {
+  var x = document.getElementById("myHeader");
+  x.style.color = "red";
+}
+
+
+
+
+</script>
+<br><br>
+<table id="myTable">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+  </table>
+<button onclick="tablica()">Obriši prvi red</button>
+
+</body>
+</html>
