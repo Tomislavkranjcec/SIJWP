@@ -1,185 +1,94 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8"> 
-<head>
-<style>
-.link {
-  background-color: #3477e2;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    <head>
 
-body {
 
-        background: url('https://wallpaperaccess.com/full/333537.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-}
-div {
-  border: 5px solid white;
-  background-color: #3477e2;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  color: white;
-  opacity: 0.9;
-  font-family: Calibri;
- 
-   
-}
-  
-  
-  .tekst{
-     text-align: center;
-     font-family: Calibri;
-     color: black;
-    font-size:35px;
-    background-color:white;
-  }
+        <style>
+            table, td {
+              border: 1px solid black;
+            }
+            </style>
+    </head>
+<body>
+    <article>
+        <header id="myHeader">
+        <h3>Stranica napravljena DOM u javascriptu</h3>
+        </header>
+        
+      </article>
     
-.centerslika {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  opacity: 0.5;
-  
-}
-  
-  .centerslika1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  
-  
-}
-.centerslika:hover {
-  opacity: 1.0;
-}
-.center {
-  text-align: center;
-  color: rgb(0, 179, 0);
-   font-family: Calibri;
-  webkit-text-stroke: 2px black;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #3477e2;
-}
+      <button onclick="Naslov()">Promjeni boju naslova</button>
+    
+    <p>Ovaj dokument je zadnje promjenjen <span id="demo1"></span>.</p>
+<p>Klikom na gumb ispiši ime domene servera koja je učitala ovaj dokument</p>
 
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+<button onclick="myFunction()">Probaj</button>
 
 
 
-li.dropdown {
-    display: inline-block;
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #893591;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
 
-.dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>
+<img id="myImg" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1043380158mod-1538401869.jpg?crop=0.536xw:1.00xh;0.0221xw,0&resize=480:*" alt="Kanje" width="204" height="228">
+
+<p>Klikni ovaj gumb da ispišeš URL slike</p>
+
+<button onclick="slika()">Klikni</button>
+<br><br>
+<button onclick="background()">Promjeni pozadinu</button>
+<script>
+   
+    function myFunction() {
+  document.getElementById("demo").innerHTML = document.domain;
 
   
-  <script language="JavaScript">
-<!--
-function euroConverter(){
-document.converter.dollar.value = document.converter.euro.value * 7.56
-document.converter.pound.value = document.converter.euro.value * 1.17
-document.converter.yen.value = document.converter.euro.value * 117.62
+} 
+    
+    
+    document.getElementById("demo1").innerHTML = document.lastModified;
+
+    function slika() {
+  var x = document.getElementById("myImg").src;
+  document.getElementById("demo2").innerHTML = x;
 }
-function dollarConverter(){
-document.converter.euro.value = document.converter.dollar.value * 0.13
-document.converter.pound.value = document.converter.dollar.value * 0.16
-document.converter.yen.value = document.converter.dollar.value * 15.55
+
+  function background() {
+  document.body.style.background = "url('https://www.desktopbackground.org/download/o/2010/12/13/125646_kanye-west-wallpapers-iphone_1024x768_h.jpg')  ";
+  }
+  function tablica() {
+  var x = document.getElementById("myTable");
+  x.deleteRow(0);
 }
-function poundConverter(){
-document.converter.dollar.value = document.converter.pound.value * 6.45
-document.converter.euro.value = document.converter.pound.value * 0.85 
-document.converter.yen.value = document.converter.pound.value * 100.28 
+  function Naslov() {
+  var x = document.getElementById("myHeader");
+  x.style.color = "red";
 }
-function yenConverter(){
-document.converter.dollar.value = document.converter.yen.value * 0.064
-document.converter.pound.value = document.converter.yen.value * 0.0100 
-document.converter.euro.value = document.converter.yen.value * 0.0085
-}
-//-->
+
+
+
+
 </script>
-  </head>
-  
-  <body>
-    <ul>
-  <li><a href="https://tomislavkranjcec.github.io/SIJWP/">Osnovno</a></li>
-  <li class="dropdown">
-    <a href="https://tomislavkranjcec.github.io/SIJWP/druga" class="dropbtn">Diskografija</a>
-   <li class="dropdown">
-     <a href="https://tomislavkranjcec.github.io/SIJWP/treca" class="dropbtn">Postignuća </a>
-     <li class="dropdown">
-     <a href="https://tomislavkranjcec.github.io/SIJWP/cetvrta" class="dropbtn">Kalkulator valuta </a>
-    </div>
-  </li>
-</ul>
-<form name="converter">
-<table border="0">
-<tr>
-  
-<td class="tekst" >Euro: </td><td class="tekst"><input type="text" name="euro" onChange="euroConverter()" /></td>
-</tr>
-<tr>
-<td   class="tekst">Kuna: </td><td class="tekst"><input type="text" name="dollar" onChange="dollarConverter()" /></td>
-</tr>
-<tr>
-<td   class="tekst">Dolar:</td><td class="tekst"><input type="text" name="pound" onChange="poundConverter()" /></td>
-</tr>
-<tr>
-<td class="tekst">Srpski dinari: </td><td class="tekst"><input type="text" name="yen" onChange="yenConverter()" /></td>
-</tr>
-<tr>
-<td  class="tekst" colspan="2" align="center"><input type="button" value="Konvertiraj" /></td>
-</tr>
-</table>
-</form>
+<br><br>
+<table id="myTable">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+  </table>
+<button onclick="tablica()">Obriši prvi red</button>
+
 </body>
 </html>
 
