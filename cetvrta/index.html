@@ -3,6 +3,73 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.link {
+  background-color: #3477e2;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3477e2;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #893591;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown {
+  font-family: Tahoma; 
+  
+  }
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -50,14 +117,7 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -100,18 +160,30 @@ img {vertical-align: middle;}
 </style>
 </head>
 <body>
+<ul>
+
+  <li class="dropdown"><a href="https://tomislavkranjcec.github.io/SIJWP/">Osnovno</a></li>
+  <li class="dropdown">
+    <a href="https://tomislavkranjcec.github.io/SIJWP/druga" class="dropbtn">Diskografija</a>
+   <li class="dropdown">
+     <a href="https://tomislavkranjcec.github.io/SIJWP/cetvrta" class="dropbtn">Shop </a>
+    
+  </li>
+</ul>
+
+
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 9</div>
-  <a href="https://tomislavkranjcec.github.io/SIJWP/peta/"><img class="ns-img" src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/Vote-Kanye_Black_Hat_RV_1890x1020_3c56c485-865e-4c07-83b5-94116f36f7cd_1024x1024@2x.jpg?v=1602028342" style="width:100%" style="cursor-pointer;"></a>
+  
+  <a href="https://tomislavkranjcec.github.io/SIJWP/"><img class="ns-img" src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/Vote-Kanye_Black_Hat_RV_1890x1020_3c56c485-865e-4c07-83b5-94116f36f7cd_1024x1024@2x.jpg?v=1602028342" style="width:100%" style="cursor-pointer;"></a>
   <div class="text">Kanye 2020 Cap</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">2 / 9</div>
-  <a href="https://tomislavkranjcec.github.io/SIJWP/sesta/"><img class="ns-img" src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/46_3x_712aa5e4-abac-405c-acd6-7914cf80f22a_530x@2x.png?v=1602017965" style="width:100%" style="cursor-pointer;"></a>
+  
+  <a href="https://tomislavkranjcec.github.io/SIJWP/"><img class="ns-img" src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/46_3x_712aa5e4-abac-405c-acd6-7914cf80f22a_530x@2x.png?v=1602017965" style="width:100%" style="cursor-pointer;"></a>
 
   <div class="text">Kanye 2020 Hoodie</div>
 </div>
