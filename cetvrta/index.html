@@ -1,186 +1,164 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8"> 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.link {
-  background-color: #3477e2;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Tahoma; 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-body {
-
- 
-  
-}
-div1 {
- 
-
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
   color: black;
-  opacity: 0.9;
-  font-family: Tahoma; 
- 
-   
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 
 
-
-
-
-.centerslika {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  opacity: 0.5;
-  
-}
-  
-  .centerslika1 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  
-  
-}
-.centerslika:hover {
-  opacity: 1.0;
-}
-.center {
+/* Caption text */
+.text {
+  color: (255,255,255);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
-  color: rgb(0, 0,0);
-   font-family: Tahoma; 
-  webkit-text-stroke: 2px black;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #3477e2;
-	font-family: Tahoma; 
 }
 
-li {
-    float: left;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-	font-family: Tahoma; 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.left {
-align="left"
-
-li.dropdown {
-    display: inline-block;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #893591;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	font-family: Tahoma; 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-	font-family: Tahoma; 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-	
-	.dropdown {
-	font-family: Tahoma; 
-	}
-	
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 </style>
-
 </head>
 <body>
-<ul>
-  <li ><a href="https://tomislavkranjcec.github.io/SIJWP/">Osnovno</a></li>
-  <li class="dropdown">
-    <a href="https://tomislavkranjcec.github.io/SIJWP/druga" >Diskografija</a>
-   <li class="dropdown">
-   
-     <a href="https://tomislavkranjcec.github.io/SIJWP/cetvrta" class="dropdown">Shop </a>
-    </div>
-  </li>
-</ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 9</div>
+  <a href="https://tomislavkranjcec.github.io/SIJWP/"><img class="ns-img" src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/Vote-Kanye_Black_Hat_RV_1890x1020_3c56c485-865e-4c07-83b5-94116f36f7cd_1024x1024@2x.jpg?v=1602028342" style="width:100%" style="cursor-pointer;"></a>
+  <div class="text">Kanye 2020 Cap</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 9</div>
+  <a href="https://tomislavkranjcec.github.io/SIJWP/"><img class="ns-img" src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/46_3x_712aa5e4-abac-405c-acd6-7914cf80f22a_530x@2x.png?v=1602017965" style="width:100%" style="cursor-pointer;"></a>
+
+  <div class="text">Kanye 2020 Hoodie</div>
+</div>
 
 
 
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
  
- <img src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/Vote-Kanye_Black_Hat_RV_1890x1020_3c56c485-865e-4c07-83b5-94116f36f7cd_1024x1024@2x.jpg?v=1602028342" class="centerslika" alt="Kapa" width="500" height="300"> 
-
- <form class =center>
   
-  <input type="number" id="quantity" name="quantity" min="1" max="99" size="5">
-  <input type="submit" name='test' value='Dodaj u košaricu'>
-</form>
-<div1   class=center	> 
- <h1 >KANYE 2020 CAP    </h1>
- <h2 >40€   </h2>
-</div1>
+</div>
 
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
- <img src="https://cdn.shopify.com/s/files/1/0489/9487/7589/products/46_3x_712aa5e4-abac-405c-acd6-7914cf80f22a_540x.png?v=1602017965" class="centerslika" alt="Kapa" width="500" height="300"> 
- <form class =center>
-  
-  <select id="cars" name="cars">
-    <option value="volvo">S</option>
-    <option value="saab">M</option>
-    <option value="fiat">L</option>
-    <option value="audi">XL</option>
-  </select>
-  
-</form>
- 
- 
- <form class =center>
-  
-  <input type="number" id="quantity" name="quantity" min="1" max="99" size="5">
-  <input type="submit" name='test' value='Dodaj u košaricu'>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-<div1   class=center	> 
- <h1 >KANYE 2020 HOODIE    </h1>
- <h2 >80€   </h2>
-</div1>
- 
- 
- 
- 
- 
- 
- 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
-</html>
+</html> 
